@@ -24,7 +24,7 @@ export default function Navbar({ activeTab, onSelectTab }) {
               </span>
               <span>UangJajan</span>
             </a>
-            <nav aria-label="Main Navigation" className="hidden items-center gap-1 md:flex">
+            <nav aria-label="Navigasi Utama" className="hidden items-center gap-1 md:flex">
               {NAV_ITEMS.map((item) => (
                 <NavItem
                   key={item.id}
@@ -42,7 +42,7 @@ export default function Navbar({ activeTab, onSelectTab }) {
           <div className="flex items-center gap-2 md:hidden">
             <button
               type="button"
-              aria-label="Notification"
+              aria-label="Notifikasi"
               className="rounded-full border border-gray-200 bg-brand-surface p-2 text-brand-dark"
             >
               <Bell className="h-4 w-4" aria-hidden="true" />
@@ -54,7 +54,7 @@ export default function Navbar({ activeTab, onSelectTab }) {
         </div>
       </header>
       <nav
-        aria-label="Mobile Navigation"
+        aria-label="Navigasi mobile"
         className="fixed right-4 bottom-4 left-4 z-50 flex justify-around rounded-2xl bg-brand-forest p-2 shadow-lg md:hidden"
       >
         {NAV_ITEMS.map((item) => (

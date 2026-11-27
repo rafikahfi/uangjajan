@@ -5,7 +5,7 @@ export default function UserMenu({ userName = "Rafi", roleLabel = "remaja" }) {
     <div className="flex items-center gap-3">
       <button
         type="button"
-        aria-label="Notification"
+        aria-label="Notifikasi"
         className=" rounded-full border border-gray-200 bg-brand-surface p-2 text-brand-dark transition-colors hover:bg-gray-50"
       >
         <Bell className="h-4 w-4" aria-hidden="true" />
