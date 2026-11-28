@@ -1,16 +1,17 @@
-# React + Vite
+    # UangJajan
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+    Aplikasi web pencatat keuangan pribadi berbasis **React**, **Vite**, dan **Tailwind CSS** dengan tema warna hijau (`brand-forest`, `brand-lime`, `brand-surface`, `brand-bg`) dan aksesibilitas label berbahasa Indonesia.
 
-Currently, two official plugins are available:
+    ## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+    - **React** — UI berbasis komponen dan state manajemen
+    - **Vite** — _Bundler_ dan _dev server_ dengan _Hot Module Replacement_ (HMR)
+    - **Tailwind CSS** — _Styling_ utilitas dan token warna tema kustom
+    - **Lucide React** — Ikon antarmuka (`lucide-react`)
 
-## React Compiler
+    ## Fitur Saat Ini
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    - **Beranda (`HomePage`)**: Ringkasan total saldo, uang masuk dan keluar bulanan, persentase rasio pengeluaran, aktivitas terbaru, serta progres target dan mingguan.
+    - **Transaksi (`TransactionPage`)**: Ringkasan pemasukan dan pengeluaran per periode, filter periode (`Bulan ini` / `Minggu ini`), tombol tambah transaksi, dan daftar riwayat transaksi.
+    - **Navigasi Responsif (`Navbar`)**: _Sticky top header_ di desktop dan _floating bottom navigation_ di layar mobile.
+    - **Dalam Pengembangan**: Halaman **Target** (`TargetPage`), **Laporan** (`ReportPage`), modal/form input transaksi, serta _toggle_ tema Light/Dark.
