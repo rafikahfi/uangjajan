@@ -1,5 +1,5 @@
 import { Calendar, ChevronRight, Disc, Plus } from "lucide-react";
-import { formatRupiah } from "../utils/formatCurrency";
+import { formatRupiah } from "../../utils/formatCurrency";
 
 export default function GoalAndWeeklyCard({ goal, onAddSaving, onOpenWeeklyBudget }) {
   const progressPercent =

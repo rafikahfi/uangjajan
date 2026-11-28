@@ -1,5 +1,5 @@
 import { ChevronRight } from "lucide-react";
-import { formatRupiah } from "../utils/formatCurrency";
+import { formatRupiah } from "../../utils/formatCurrency";
 
 const BADGE_STYLES = {
   orange: "bg-orange-100 text-orange-800",

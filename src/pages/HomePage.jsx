@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { ACTIVE_GOAL, DASHBOARD_SUMMARY, RECENT_ACTIVITIES } from "../constants/dashboardData";
-import SummaryCards from "../components/SummaryCards";
-import RecentActivityCard from "../components/RecentActivityCard";
-import GoalAndWeeklyCard from "../components/GoalAndWeeklyCard";
+import SummaryCards from "../components/home/SummaryCards";
+import RecentActivityCard from "../components/home/RecentActivityCard";
+import GoalAndWeeklyCard from "../components/home/GoalAndWeeklyCard";
 
 export default function HomePage({ onNavigateTab, onOpenTransactionModal }) {
   const [audienceMode, setAudienceMode] = useState("remaja");
 
   return (
-    <main className="mx-auto max-w-6xl px-4 pt-2 pb-28 md:pb-12">
+    <main className="mx-auto max-w-6xl px-4 pt-6 pb-28 sm:px-6 sm:pt-8 lg:px-8 md:pb-12">
       <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="text-xs font-medium text-brand-muted">{DASHBOARD_SUMMARY.greetingDate}</p>

@@ -1,9 +1,9 @@
 import { ArrowDown, ArrowUp, BarChart2, MoreHorizontal, Plus } from "lucide-react";
-import { formatRupiah } from "../utils/formatCurrency";
+import { formatRupiah } from "../../utils/formatCurrency";
 
 export default function SummaryCards({ summary, onOpenTransactionModal }) {
   const expenseRatio =
-    summary.monthlyIncome > 0 ? Math.min(100, Math.round((summary.monthlyExpense / summary.MonthlyIncome) * 100)) : 0;
+    summary.monthlyIncome > 0 ? Math.min(100, Math.round((summary.monthlyExpense / summary.monthlyIncome) * 100)) : 0;
 
   return (
     <section aria-label="Ringkasan saldo dan pengeluaran" className="grid grid-cols-1 gap-5 lg:grid-cols-12">

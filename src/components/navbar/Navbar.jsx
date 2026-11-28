@@ -1,5 +1,5 @@
 import { Wallet, Bell } from "lucide-react";
-import { NAV_ITEMS } from "../constants/navItems";
+import { NAV_ITEMS } from "../../constants/navItems";
 import NavItem from "./NavItem";
 import UserMenu from "./UserMenu";
 
@@ -11,7 +11,7 @@ export default function Navbar({ activeTab, onSelectTab }) {
 
   return (
     <>
-      <header className="px-20 py-4 shadow-sm">
+      <header className="sticky top-0 z-40 border-b border-gray-100 bg-brand-surface/95 px-4 py-3.5 shadow-2xs backdrop-blur-xs sm:px-6 lg:px-8">
         <div className="mx-auto flex max-6-xl items-center justify-between ">
           <div className="flex items-center gap-8">
             <a
